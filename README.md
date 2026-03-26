@@ -6,41 +6,37 @@ A secure login system built using Django with authentication, authorization, pas
 
 ## Features
 
-* User Registration and Login
-* Secure Authentication and Authorization
-* Password Hashing
-* Session Management
-* CSRF Protection
-* Input Validation
-* Protected Dashboard Access
-* Responsive UI using HTML, CSS, Bootstrap
+- User Registration and Login
+- Secure Authentication and Authorization
+- Password Hashing
+- Session Management
+- CSRF Protection
+- Input Validation
+- Protected Dashboard Access
+- Responsive UI using HTML, CSS, Bootstrap
 
 ---
 
 ## Tech Stack
 
-* Backend: Python, Django
-* Frontend: HTML, CSS, Bootstrap, JavaScript
-* Database: SQLite (default) / MySQL
+- Backend: Python, Django
+- Frontend: HTML, CSS, Bootstrap, JavaScript
+- Database: SQLite (default) / MySQL
 
 ---
 
 ## Screenshots
 
 ### Home Page
-
 ![Home](screenshots/home_page.png)
 
 ### Register Page
-
 ![Register](screenshots/register_page.png)
 
 ### Login Page
-
 ![Login](screenshots/login-page.png)
 
 ### Dashboard
-
 ![Dashboard](screenshots/dashboard_page.png)
 
 ---
@@ -54,5 +50,6 @@ cd Secure_login_system
 python -m venv venv
 venv\Scripts\activate
 
-pip install
-```
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
