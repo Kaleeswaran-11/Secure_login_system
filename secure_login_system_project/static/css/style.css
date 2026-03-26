@@ -1,0 +1,99 @@
+body {
+    background: linear-gradient(135deg, #f8fafc, #eef2ff);
+    min-height: 100vh;
+    color: #1f2937;
+}
+
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.feature-card,
+.auth-card,
+.dashboard-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.feature-card,
+.dashboard-card {
+    padding: 2rem;
+}
+
+.auth-card {
+    padding: 2rem;
+}
+
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 0.9rem;
+}
+
+.feature-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.compact li {
+    margin-bottom: 0.7rem;
+}
+
+.form-control {
+    padding: 0.85rem 1rem;
+    border-radius: 12px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.15);
+    border-color: #2563eb;
+}
+
+.btn {
+    border-radius: 12px;
+    padding: 0.75rem 1.1rem;
+}
+
+.stat-box {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    height: 100%;
+}
+
+.stat-box h6 {
+    margin-bottom: 0.4rem;
+    color: #475569;
+}
+
+.stat-box p {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+    }
+
+    .auth-card,
+    .dashboard-card,
+    .feature-card {
+        padding: 1.5rem;
+    }
+}

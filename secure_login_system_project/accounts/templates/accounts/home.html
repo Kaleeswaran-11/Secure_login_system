@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Home | Secure Login System{% endblock %}
+{% block content %}
+<section class="hero-section">
+    <div class="container py-5">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+                <span class="badge bg-primary-subtle text-primary mb-3">Django Authentication Project</span>
+                <h1 class="display-5 fw-bold mb-3">Build trust with secure authentication and authorization.</h1>
+                <p class="lead text-muted mb-4">
+                    A complete Django-based secure login system with password hashing, session management,
+                    CSRF protection, input validation, and protected routes.
+                </p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="{% url 'register' %}" class="btn btn-primary btn-lg">Get Started</a>
+                    <a href="{% url 'login' %}" class="btn btn-outline-dark btn-lg">Login</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="feature-card p-4 p-md-5">
+                    <h3 class="fw-semibold mb-3">Security Highlights</h3>
+                    <ul class="feature-list">
+                        <li>Hashed passwords with Django auth</li>
+                        <li>Session-based login tracking</li>
+                        <li>CSRF tokens in all forms</li>
+                        <li>Input and password validation</li>
+                        <li>Protected dashboard access</li>
+                        <li>Friendly success and error messages</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
